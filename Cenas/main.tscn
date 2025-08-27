@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=3 uid="uid://dahmmb64g50ci"]
 
 [ext_resource type="PackedScene" uid="uid://42eka7k2x4cb" path="res://Cenas/player.tscn" id="1_74bqr"]
-[ext_resource type="Texture2D" uid="uid://cbmbfnxkr2dsc" path="res://Material Freeway/wallpaperfreeway.png" id="1_ruij7"]
 [ext_resource type="Script" uid="uid://dykhyecntc2fb" path="res://Cenas/main.gd" id="1_x6di6"]
 [ext_resource type="PackedScene" uid="uid://juoy8t4bdw0i" path="res://Cenas/linha_chegada.tscn" id="2_ruij7"]
+[ext_resource type="Texture2D" uid="uid://dsqtjrssk2xh2" path="res://Material Freeway/Screenshot_99.png" id="2_x6di6"]
 [ext_resource type="PackedScene" uid="uid://ffgsgdl6mvtq" path="res://Cenas/hud.tscn" id="4_lb8y5"]
 [ext_resource type="AudioStream" uid="uid://bcxfim0jije25" path="res://Material Freeway/sons/tema.wav" id="4_n00j1"]
 [ext_resource type="AudioStream" uid="uid://b5eik1y702huk" path="res://Material Freeway/sons/ponto.wav" id="5_x6di6"]
@@ -13,7 +13,8 @@
 script = ExtResource("1_x6di6")
 
 [node name="Pista" type="Sprite2D" parent="."]
-texture = ExtResource("1_ruij7")
+scale = Vector2(0.830629, 0.833333)
+texture = ExtResource("2_x6di6")
 centered = false
 
 [node name="Player" parent="." instance=ExtResource("1_74bqr")]

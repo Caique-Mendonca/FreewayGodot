@@ -1,133 +1,52 @@
-[gd_scene load_steps=18 format=3 uid="uid://nmqy6e4htrnn"]
+[gd_scene load_steps=9 format=3 uid="uid://nmqy6e4htrnn"]
 
 [ext_resource type="Script" uid="uid://cndjexd5hkgto" path="res://Cenas/carros.gd" id="1_pvg5f"]
-[ext_resource type="Texture2D" uid="uid://bbd2fk3ar0isk" path="res://Material Freeway/carros/coches (1).png" id="1_seikp"]
-[ext_resource type="Texture2D" uid="uid://co2ieymcipo3a" path="res://Material Freeway/carros/coches (10).png" id="2_pvg5f"]
-[ext_resource type="Texture2D" uid="uid://bvnt8gr7ijswh" path="res://Material Freeway/carros/coches (11).png" id="3_qtsem"]
-[ext_resource type="Texture2D" uid="uid://cl32igll3x27a" path="res://Material Freeway/carros/coches (12).png" id="4_eyynr"]
-[ext_resource type="Texture2D" uid="uid://hydpg4fhawny" path="res://Material Freeway/carros/coches (13).png" id="5_aqtas"]
-[ext_resource type="Texture2D" uid="uid://c6813nbspea8d" path="res://Material Freeway/carros/coches (14).png" id="6_dhytv"]
-[ext_resource type="Texture2D" uid="uid://bvnwwx721cuqq" path="res://Material Freeway/carros/coches (2).png" id="7_7g5ho"]
-[ext_resource type="Texture2D" uid="uid://io2s5qh2d6v1" path="res://Material Freeway/carros/coches (3).png" id="8_6jem2"]
-[ext_resource type="Texture2D" uid="uid://ds8xwn1rlk8os" path="res://Material Freeway/carros/coches (4).png" id="9_rntr6"]
-[ext_resource type="Texture2D" uid="uid://b1hlymy63apwu" path="res://Material Freeway/carros/coches (5).png" id="10_a4klt"]
-[ext_resource type="Texture2D" uid="uid://qgvty8ct48x7" path="res://Material Freeway/carros/coches (6).png" id="11_kyb1r"]
-[ext_resource type="Texture2D" uid="uid://bhoi2462611iy" path="res://Material Freeway/carros/coches (7).png" id="12_xp268"]
-[ext_resource type="Texture2D" uid="uid://cbalm0hjn5x5c" path="res://Material Freeway/carros/coches (8).png" id="13_7jppq"]
-[ext_resource type="Texture2D" uid="uid://dpg7xnyehev4o" path="res://Material Freeway/carros/coches (9).png" id="14_4rq0c"]
+[ext_resource type="Texture2D" uid="uid://de6se7jgl2l61" path="res://Material Freeway/Monstros/45742671-pixel-arte-ilustracao-arraia-pixelizada-arraia-oceano-arraia-mar-animal-pixelizada-para-a-pixel-arte-jogos-e-icone-para-local-na-rede-internet-e-jogo-velho.png" id="2_cbwys"]
+[ext_resource type="Texture2D" uid="uid://8dcp8q42btbc" path="res://Material Freeway/Monstros/barracuda-removebg-preview.png" id="3_coxhs"]
+[ext_resource type="Texture2D" uid="uid://d0sahntmen423" path="res://Material Freeway/Monstros/Piranha.png" id="4_31dlu"]
+[ext_resource type="Texture2D" uid="uid://csj647x2kqbrf" path="res://Material Freeway/Monstros/tubarao-com-estilo-pixel-art_475147-470-_1_-removebg-preview.png" id="5_21wbt"]
+[ext_resource type="Texture2D" uid="uid://b4qkmm2xq0u0u" path="res://Material Freeway/Monstros/Screenshot_100-removebg-preview (3).png" id="6_coxhs"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_cc6av"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_seikp")
+"texture": ExtResource("2_cbwys")
 }],
 "loop": true,
-"name": &"Carro 1",
+"name": &"Inimigo 1",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_pvg5f")
+"texture": ExtResource("3_coxhs")
 }],
 "loop": true,
-"name": &"Carro 10",
+"name": &"Inimigo 2",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_qtsem")
+"texture": ExtResource("4_31dlu")
 }],
 "loop": true,
-"name": &"Carro 11",
+"name": &"Inimigo 3",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_eyynr")
+"texture": ExtResource("5_21wbt")
 }],
 "loop": true,
-"name": &"Carro 12",
+"name": &"Inimigo 4",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_aqtas")
+"texture": ExtResource("6_coxhs")
 }],
 "loop": true,
-"name": &"Carro 13",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("6_dhytv")
-}],
-"loop": true,
-"name": &"Carro 14",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("7_7g5ho")
-}],
-"loop": true,
-"name": &"Carro 2",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("8_6jem2")
-}],
-"loop": true,
-"name": &"Carro 3",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("9_rntr6")
-}],
-"loop": true,
-"name": &"Carro 4",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("10_a4klt")
-}],
-"loop": true,
-"name": &"Carro 5",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("11_kyb1r")
-}],
-"loop": true,
-"name": &"Carro 6",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("12_xp268")
-}],
-"loop": true,
-"name": &"Carro 7",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("13_7jppq")
-}],
-"loop": true,
-"name": &"Carro 8",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("14_4rq0c")
-}],
-"loop": true,
-"name": &"Carro 9",
+"name": &"Inimigo 5",
 "speed": 5.0
 }]
 
@@ -139,10 +58,9 @@ gravity_scale = 0.0
 script = ExtResource("1_pvg5f")
 
 [node name="Animacao" type="AnimatedSprite2D" parent="."]
-rotation = 1.5708
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.20101, 0.202041)
 sprite_frames = SubResource("SpriteFrames_cc6av")
-animation = &"Carro 9"
+animation = &"Inimigo 2"
 
 [node name="Colisao" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_seikp")
