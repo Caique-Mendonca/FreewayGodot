@@ -1,11 +1,13 @@
-[gd_scene load_steps=9 format=3 uid="uid://dahmmb64g50ci"]
+[gd_scene load_steps=11 format=3 uid="uid://dahmmb64g50ci"]
 
 [ext_resource type="PackedScene" uid="uid://42eka7k2x4cb" path="res://Cenas/player.tscn" id="1_74bqr"]
 [ext_resource type="Script" uid="uid://dykhyecntc2fb" path="res://Cenas/main.gd" id="1_x6di6"]
 [ext_resource type="PackedScene" uid="uid://juoy8t4bdw0i" path="res://Cenas/linha_chegada.tscn" id="2_ruij7"]
 [ext_resource type="Texture2D" uid="uid://dsqtjrssk2xh2" path="res://Material Freeway/Screenshot_99.png" id="2_x6di6"]
+[ext_resource type="PackedScene" uid="uid://cx3qnoio1akr3" path="res://Cenas/player2.tscn" id="4_btbr3"]
 [ext_resource type="PackedScene" uid="uid://ffgsgdl6mvtq" path="res://Cenas/hud.tscn" id="4_lb8y5"]
 [ext_resource type="AudioStream" uid="uid://bcxfim0jije25" path="res://Material Freeway/sons/tema.wav" id="4_n00j1"]
+[ext_resource type="Script" uid="uid://c8ecp86djxx10" path="res://Cenas/player_2.gd" id="5_jjrtw"]
 [ext_resource type="AudioStream" uid="uid://b5eik1y702huk" path="res://Material Freeway/sons/ponto.wav" id="5_x6di6"]
 [ext_resource type="AudioStream" uid="uid://oh1qv50vms8" path="res://Material Freeway/sons/ganhou.wav" id="6_btbr3"]
 
@@ -13,20 +15,23 @@
 script = ExtResource("1_x6di6")
 
 [node name="Pista" type="Sprite2D" parent="."]
-scale = Vector2(0.830629, 0.833333)
+scale = Vector2(0.748215, 0.834491)
 texture = ExtResource("2_x6di6")
 centered = false
 
 [node name="Player" parent="." instance=ExtResource("1_74bqr")]
 
+[node name="Player2" parent="." instance=ExtResource("4_btbr3")]
+script = ExtResource("5_jjrtw")
+
 [node name="LinhaChegada" parent="." instance=ExtResource("2_ruij7")]
 position = Vector2(640, 64)
 
-[node name="TimerCarrosRapidos" type="Timer" parent="."]
+[node name="TimerInimigosRapidos" type="Timer" parent="."]
 wait_time = 0.3
 autostart = true
 
-[node name="TimerCarrosLentos" type="Timer" parent="."]
+[node name="TimerInimigosLentos" type="Timer" parent="."]
 wait_time = 0.5
 autostart = true
 
@@ -41,7 +46,12 @@ stream = ExtResource("6_btbr3")
 
 [node name="HUD" parent="." instance=ExtResource("4_lb8y5")]
 
+[node name="TimerFim" type="Timer" parent="."]
+wait_time = 60.0
+autostart = true
+
 [connection signal="pontua" from="Player" to="." method="_on_player_pontua"]
-[connection signal="timeout" from="TimerCarrosRapidos" to="." method="_on_timer_carros_rapidos_timeout"]
-[connection signal="timeout" from="TimerCarrosLentos" to="." method="_on_timer_carros_lentos_timeout"]
+[connection signal="timeout" from="TimerInimigosRapidos" to="." method="_on_timer_carros_rapidos_timeout"]
+[connection signal="timeout" from="TimerInimigosLentos" to="." method="_on_timer_carros_lentos_timeout"]
 [connection signal="reinicia" from="HUD" to="." method="_on_hud_reinicia"]
+[connection signal="timeout" from="TimerFim" to="." method="_on_timer_timeout"]

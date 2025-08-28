@@ -1,9 +1,10 @@
 extends Node
 
-var  cena_carros = preload("res://Cenas/carros.tscn")
+var cena_carros = preload("res://Cenas/carros.tscn")
 var pistas_rapidas_y = [104, 272, 488] 
 var pistas_lentas_y = [160, 216, 324, 384, 438, 544, 600]
 var score = 0
+var timer = 60
 
 func _ready() -> void:
 	$HUD/Placar.text = str(score)
@@ -43,11 +44,6 @@ func _on_player_pontua() -> void:
 		$TimerCarrosLentos.stop()
 		$AudioVitoria.play()
 		$Player.speed = 0
-		
-		
-		
-		
-
 
 func _on_hud_reinicia() -> void:
 	get_tree().reload_current_scene()
