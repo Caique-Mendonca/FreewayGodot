@@ -3,7 +3,7 @@ extends Area2D
 signal pontua
 @export var speed: float = 100.0
 var screen_size: Vector2
-var posicao_inicial: Vector2 = Vector2(640, 690)
+var posicao_inicial: Vector2 = Vector2(840, 690)
 
 
 func _ready() -> void:
@@ -13,13 +13,13 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	var velocity = Vector2.ZERO
 	
-	if Input.is_action_pressed("ui_up"):
+	if Input.is_action_pressed("W"):
 		velocity.y -= 1
-	if Input.is_action_pressed("ui_down"):
+	if Input.is_action_pressed("S"):
 		velocity.y += 1
-	if Input.is_action_pressed("ui_left"):
+	if Input.is_action_pressed("A"):
 		velocity.x -= 1
-	if Input.is_action_pressed("ui_right"):
+	if Input.is_action_pressed("D"):
 		velocity.x += 1
 		
 	if velocity != Vector2.ZERO:
