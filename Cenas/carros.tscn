@@ -60,7 +60,7 @@ script = ExtResource("1_pvg5f")
 [node name="Animacao" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.20101, 0.202041)
 sprite_frames = SubResource("SpriteFrames_cc6av")
-animation = &"Inimigo 2"
+animation = &"Inimigo 4"
 
 [node name="Colisao" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_seikp")
