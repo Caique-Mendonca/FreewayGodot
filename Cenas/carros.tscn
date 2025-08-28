@@ -1,11 +1,12 @@
-[gd_scene load_steps=9 format=3 uid="uid://nmqy6e4htrnn"]
+[gd_scene load_steps=10 format=3 uid="uid://nmqy6e4htrnn"]
 
 [ext_resource type="Script" uid="uid://cndjexd5hkgto" path="res://Cenas/carros.gd" id="1_pvg5f"]
-[ext_resource type="Texture2D" uid="uid://de6se7jgl2l61" path="res://Material Freeway/Monstros/45742671-pixel-arte-ilustracao-arraia-pixelizada-arraia-oceano-arraia-mar-animal-pixelizada-para-a-pixel-arte-jogos-e-icone-para-local-na-rede-internet-e-jogo-velho.png" id="2_cbwys"]
-[ext_resource type="Texture2D" uid="uid://8dcp8q42btbc" path="res://Material Freeway/Monstros/barracuda-removebg-preview.png" id="3_coxhs"]
-[ext_resource type="Texture2D" uid="uid://d0sahntmen423" path="res://Material Freeway/Monstros/Piranha.png" id="4_31dlu"]
-[ext_resource type="Texture2D" uid="uid://csj647x2kqbrf" path="res://Material Freeway/Monstros/tubarao-com-estilo-pixel-art_475147-470-_1_-removebg-preview.png" id="5_21wbt"]
-[ext_resource type="Texture2D" uid="uid://b4qkmm2xq0u0u" path="res://Material Freeway/Monstros/Screenshot_100-removebg-preview (3).png" id="6_coxhs"]
+[ext_resource type="Texture2D" uid="uid://de6se7jgl2l61" path="res://Material Freeway/Inimigos/45742671-pixel-arte-ilustracao-arraia-pixelizada-arraia-oceano-arraia-mar-animal-pixelizada-para-a-pixel-arte-jogos-e-icone-para-local-na-rede-internet-e-jogo-velho.png" id="2_cbwys"]
+[ext_resource type="Texture2D" uid="uid://8dcp8q42btbc" path="res://Material Freeway/Inimigos/barracuda-removebg-preview.png" id="3_coxhs"]
+[ext_resource type="Texture2D" uid="uid://d0sahntmen423" path="res://Material Freeway/Inimigos/Piranha.png" id="4_31dlu"]
+[ext_resource type="Texture2D" uid="uid://csj647x2kqbrf" path="res://Material Freeway/Inimigos/tubarao-com-estilo-pixel-art_475147-470-_1_-removebg-preview.png" id="5_21wbt"]
+[ext_resource type="Texture2D" uid="uid://b4qkmm2xq0u0u" path="res://Material Freeway/Inimigos/Screenshot_100-removebg-preview (3).png" id="6_coxhs"]
+[ext_resource type="Texture2D" uid="uid://bs325p1a0ui2o" path="res://Material Freeway/Inimigos/Screenshot_101-removebg-preview (1).png" id="7_31dlu"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_cc6av"]
 animations = [{
@@ -48,6 +49,14 @@ animations = [{
 "loop": true,
 "name": &"Inimigo 5",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_31dlu")
+}],
+"loop": true,
+"name": &"Inimigo 6",
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_seikp"]
@@ -60,7 +69,7 @@ script = ExtResource("1_pvg5f")
 [node name="Animacao" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.20101, 0.202041)
 sprite_frames = SubResource("SpriteFrames_cc6av")
-animation = &"Inimigo 2"
+animation = &"Inimigo 1"
 
 [node name="Colisao" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_seikp")

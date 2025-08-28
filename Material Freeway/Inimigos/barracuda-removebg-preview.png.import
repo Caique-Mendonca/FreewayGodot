@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8dcp8q42btbc"
-path="res://.godot/imported/barracuda-removebg-preview.png-334a500e6d26e109995d432d29799bb4.ctex"
+path="res://.godot/imported/barracuda-removebg-preview.png-09cf5c95c52d9351789d3669f59403ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Material Freeway/Monstros/barracuda-removebg-preview.png"
-dest_files=["res://.godot/imported/barracuda-removebg-preview.png-334a500e6d26e109995d432d29799bb4.ctex"]
+source_file="res://Material Freeway/Inimigos/barracuda-removebg-preview.png"
+dest_files=["res://.godot/imported/barracuda-removebg-preview.png-09cf5c95c52d9351789d3669f59403ef.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0sahntmen423"
-path="res://.godot/imported/Piranha.png-96d5d427265d867016a606b0d5caa8e6.ctex"
+uid="uid://csj647x2kqbrf"
+path="res://.godot/imported/tubarao-com-estilo-pixel-art_475147-470-_1_-removebg-preview.png-5a8a74754ec918cca31adb693ea112f1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Material Freeway/Monstros/Piranha.png"
-dest_files=["res://.godot/imported/Piranha.png-96d5d427265d867016a606b0d5caa8e6.ctex"]
+source_file="res://Material Freeway/Inimigos/tubarao-com-estilo-pixel-art_475147-470-_1_-removebg-preview.png"
+dest_files=["res://.godot/imported/tubarao-com-estilo-pixel-art_475147-470-_1_-removebg-preview.png-5a8a74754ec918cca31adb693ea112f1.ctex"]
 
 [params]
 

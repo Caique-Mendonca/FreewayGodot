@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://csj647x2kqbrf"
-path="res://.godot/imported/tubarao-com-estilo-pixel-art_475147-470-_1_-removebg-preview.png-efbd2ce2eabae9fc2cc97a6831e76f80.ctex"
+uid="uid://bs325p1a0ui2o"
+path="res://.godot/imported/Screenshot_101-removebg-preview (1).png-946a89820c2752e289f104172812f54e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Material Freeway/Monstros/tubarao-com-estilo-pixel-art_475147-470-_1_-removebg-preview.png"
-dest_files=["res://.godot/imported/tubarao-com-estilo-pixel-art_475147-470-_1_-removebg-preview.png-efbd2ce2eabae9fc2cc97a6831e76f80.ctex"]
+source_file="res://Material Freeway/Inimigos/Screenshot_101-removebg-preview (1).png"
+dest_files=["res://.godot/imported/Screenshot_101-removebg-preview (1).png-946a89820c2752e289f104172812f54e.ctex"]
 
 [params]
 
