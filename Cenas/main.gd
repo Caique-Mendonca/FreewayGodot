@@ -4,6 +4,7 @@ var cena_carros = preload("res://Cenas/carros.tscn")
 var pistas_rapidas_y = [104, 272, 488] 
 var pistas_lentas_y = [160, 216, 324, 384, 438, 544, 600]
 var score = 0
+var score2 = 0
 var timer = 60
 
 func _ready() -> void:
@@ -32,18 +33,46 @@ func _on_timer_carros_lentos_timeout() -> void:
 
 
 func _on_player_pontua() -> void:
-	if score <= 10:
+	if score <= 2:
 		score += 1
 		$HUD/Placar.text = str(score)
 		$AudioPonto.play()
 		$Player.position = $Player.posicao_inicial
-	if score == 10:
+	if score == 2:
 		$HUD/Mensagem.show()
 		$HUD/Button.show()
-		$TimerCarrosRapidos.stop()
-		$TimerCarrosLentos.stop()
+		$TimerInimigosRapidos.stop()
+		$TimerInimigosLentos.stop()
 		$AudioVitoria.play()
 		$Player.speed = 0
+		$Player2.speed = 0
 
 func _on_hud_reinicia() -> void:
 	get_tree().reload_current_scene()
+
+
+func _on_timer_fim_timeout() -> void:
+	$HUD/Mensagem.show()
+	$HUD/Mensagem.text = "Tempo esgotado"
+	$HUD/Button.show()
+	$TimerInimigosRapidos.stop()
+	$TimerInimigosLentos.stop()
+	$AudioVitoria.play()
+	$Player.speed = 0
+	$Player2.speed = 0
+
+
+func _on_player_2_pontua() -> void:
+	if score <= 2:
+		score2 += 1
+		$HUD/Placar2.text = str(score2)
+		$AudioPonto.play()
+		$Player.position = $Player.posicao_inicial
+	if score2 == 2:
+		$HUD/Mensagem.show()
+		$HUD/Button.show()
+		$TimerInimigosRapidos.stop()
+		$TimerInimigosLentos.stop()
+		$AudioVitoria.play()
+		$Player.speed = 0
+		$Player2.speed = 0
