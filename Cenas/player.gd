@@ -13,13 +13,13 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	var velocity = Vector2.ZERO
 	
-	if Input.is_action_pressed("ui_up"):
+	if Input.is_action_pressed("W"):
 		velocity.y -= 1
-	if Input.is_action_pressed("ui_down"):
+	if Input.is_action_pressed("S"):
 		velocity.y += 1
-	if Input.is_action_pressed("ui_left"):
+	if Input.is_action_pressed("A"):
 		velocity.x -= 1
-	if Input.is_action_pressed("ui_right"):
+	if Input.is_action_pressed("D"):
 		velocity.x += 1
 		
 	if velocity != Vector2.ZERO:
