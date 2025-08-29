@@ -69,4 +69,6 @@ shape = SubResource("RectangleShape2D_seikp")
 position = Vector2(7.15256e-07, 0)
 scale = Vector2(2.5, 1.7)
 
+[node name="Animacao2" type="AnimatedSprite2D" parent="."]
+
 [connection signal="screen_exited" from="Notificador" to="." method="_on_notificador_screen_exited"]
