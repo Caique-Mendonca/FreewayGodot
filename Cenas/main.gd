@@ -47,6 +47,7 @@ func _on_player_pontua() -> void:
 		$AudioVitoria.play()
 		$Player.speed = 0
 		$Player2.speed = 0
+		$TimerFim.stop()
 
 func _on_hud_reinicia() -> void:
 	get_tree().reload_current_scene()
@@ -83,3 +84,4 @@ func _on_player_2_pontua() -> void:
 		$AudioVitoria.play()
 		$Player.speed = 0
 		$Player2.speed = 0
+		$TimerFim.stop()
