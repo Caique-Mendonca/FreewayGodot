@@ -47,7 +47,7 @@ stream = ExtResource("6_btbr3")
 [node name="HUD" parent="." instance=ExtResource("4_lb8y5")]
 
 [node name="TimerFim" type="Timer" parent="."]
-wait_time = 120.0
+wait_time = 90.0
 autostart = true
 
 [connection signal="pontua" from="Player" to="." method="_on_player_pontua"]

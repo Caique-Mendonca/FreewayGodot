@@ -21,6 +21,7 @@ func _on_timer_carros_rapidos_timeout() -> void:
 	carro.position = Vector2(1152, pista_y)
 	carro.set_linear_velocity(Vector2(randf_range(-700.0, -720.0),0))
 	carro.set_linear_damp(0.0)
+	carro.get_node("Animacao").flip_h = true
 
 func _on_timer_carros_lentos_timeout() -> void:
 	var carro = cena_carros.instantiate()
@@ -39,6 +40,7 @@ func _on_player_pontua() -> void:
 		$Player.position = $Player.posicao_inicial
 	if score == 2:
 		$HUD/Mensagem.show()
+		$HUD/Mensagem.text = "Parabéns, Marlin venceu!"
 		$HUD/Button.show()
 		$TimerInimigosRapidos.stop()
 		$TimerInimigosLentos.stop()
@@ -52,7 +54,12 @@ func _on_hud_reinicia() -> void:
 
 func _on_timer_fim_timeout() -> void:
 	$HUD/Mensagem.show()
-	$HUD/Mensagem.text = "Tempo esgotado"
+	if score > score2:
+		$HUD/Mensagem.text = "Tempo esgotado, Marlin Venceu!"
+	elif score < score2:
+		$HUD/Mensagem.text = "Tempo esgotado, Dory Venceu!"
+	else:
+		$HUD/Mensagem.text = "Tempo esgotado, Empate!"
 	$HUD/Button.show()
 	$TimerInimigosRapidos.stop()
 	$TimerInimigosLentos.stop()
@@ -69,6 +76,7 @@ func _on_player_2_pontua() -> void:
 		$Player.position = $Player.posicao_inicial
 	if score2 == 2:
 		$HUD/Mensagem.show()
+		$HUD/Mensagem.text = "Parabéns, Dory venceu!"
 		$HUD/Button.show()
 		$TimerInimigosRapidos.stop()
 		$TimerInimigosLentos.stop()
